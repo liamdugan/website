@@ -12,7 +12,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Blog " />
         <p class="title">
           No blog posts yet! (Coming soon!)
         </p>
@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Blog " />
       <p class="title">My Blog</p>
       <p class="subtitle">Research, Hobbies, Language Learning and more!</p>
       {posts.map(post => {

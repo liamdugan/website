@@ -10,7 +10,7 @@ const ProjectPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Project Page" />
+      <SEO title="Projects " />
       <p class="title">Projects coming soon!</p>
     </Layout>
   )

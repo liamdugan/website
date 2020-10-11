@@ -14,7 +14,7 @@ const HomePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Home Page" />
+      <SEO title="Home " />
       <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
           <div class="tile is-child">
