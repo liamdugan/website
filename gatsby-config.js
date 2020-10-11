@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `The Home of Liam Dugan`,
     author: {
       name: `Liam Dugan`,
       summary: `who lives and does research in Philadelphia.`,
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `The Home of Liam Dugan`,
+        short_name: `LiamDugan`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
