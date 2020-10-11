@@ -292,7 +292,6 @@ a:focus {
 
 .bio {
   display: flex;
-  margin-bottom: var(--spacing-16);
 }
 
 .bio p {
@@ -314,12 +313,15 @@ a:focus {
 }
 
 .blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  font-weight: bold;
+  font-size: var(--fontSize-4);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-0);
 }
 
 .blog-post header p {
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);
+  margin-bottom: var(--spacing-3);
 }
 
 .blog-post-nav ul {
