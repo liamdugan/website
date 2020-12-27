@@ -37,7 +37,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 630,
+              maxWidth: 896,
             },
           },
           {
@@ -50,7 +50,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              width:896,
+              related: false,
+              noIframerder: true,
+              containerClass: 'embedVideo-container',
             },
           },
           `gatsby-remark-prismjs`,

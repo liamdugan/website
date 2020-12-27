@@ -348,3 +348,9 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+.embedVideo-container {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
