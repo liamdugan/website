@@ -348,6 +348,7 @@ a:focus {
 
 .homepage-pic {
   border-radius: 100%;
+  box-shadow: 5px 5px 5px;
 }
 
 .embedVideo-container {
