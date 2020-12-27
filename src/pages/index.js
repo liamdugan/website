@@ -6,6 +6,7 @@ import CV from "../../content/assets/cv.pdf"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Links from "../components/links"
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -42,14 +43,19 @@ const HomePage = ({ data, location }) => {
             </p>
           </div>
         </div>
-        <div class="tile">
-          {profile && (
-            <Image
-              fixed={profile}
-              alt={"Liam Dugan"}
-              className="homepage-pic"
-            />
-          )}
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child homepage-pic-div">
+            {profile && (
+              <Image
+                fixed={profile}
+                alt={"Liam Dugan"}
+                className="homepage-pic"
+              />
+            )}
+          </div>
+          <div class="tile is-child">
+            <Links />
+          </div>
         </div>
       </div>
 

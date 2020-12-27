@@ -304,13 +304,6 @@ a:focus {
   border-radius: 100%;
 }
 
-.homepage-pic {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 50%;
-}
-
 .blog-post header h1 {
   font-weight: bold;
   font-size: var(--fontSize-4);
@@ -349,8 +342,37 @@ a:focus {
   }
 }
 
+.homepage-pic-div {
+  text-align:center;
+}
+
+.homepage-pic {
+  border-radius: 100%;
+}
+
 .embedVideo-container {
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.links-parent {
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.links {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.links a {
+  display: flex;
+  color: black;
+}
+
+.links a:hover {
+  color: grey;
 }
