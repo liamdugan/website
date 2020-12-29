@@ -82,9 +82,13 @@ const Layout = ({ location, title, children }) => {
       <div className="body-wrapper">
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Built from scratch with help from
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
+          {` `}
+          and
+          {` `}
+          <a href="https://bulma.io/">Bulma</a>
         </footer>
       </div>
     </div>
