@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 import CV from "../../content/assets/cv.pdf"
 
 import Bio from "../components/bio"
+import NewsEntry from "../components/newsentry"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Links from "../components/links"
@@ -58,9 +59,16 @@ const HomePage = ({ data, location }) => {
         <div class="tile is-parent is-vertical">
           <div class="tile is-child">
             <p class="title"> News </p>
+            <table class="news">
+              <NewsEntry date={"December 2020"} text={"I graduated from University of Pennsylvania with a Master's in Robotics!"}/>
+              <NewsEntry date={"December 2020"} text={"I published my Master's Thesis \"Learning Formality from Japanese-English Parallel Corpora\""}/>
+              <NewsEntry date={"September 2020"} text={"My Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
+              <NewsEntry date={"May 2020"} text={"I graduated from the University of Pennsylvania with a Bachelor's in Computer Engineering and East Asian Languages and Civilizations (Japanese)!"}/>
+            </table>
           </div>
+
           <div class="tile is-child">
-            <p class="title"> Recent Blog Posts </p>
+            <p class="title"> Blog </p>
             {posts.map(post => {
               const title = post.frontmatter.title || post.fields.slug
               return (
