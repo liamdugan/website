@@ -16,8 +16,8 @@ const HomePage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home " />
-      <div class="tile is-ancestor">
-        <div class="tile is-parent is-vertical">
+      <div class="tile is-ancestor is-vertical">
+        <div class="tile is-parent">
           <div class="tile is-child">
             <p class="title"> About Me </p>
             <p class="subtitle">
@@ -39,54 +39,49 @@ const HomePage = ({ data, location }) => {
               <a href="https://scholar.google.com/citations?user=ILGf0IIAAAAJ&hl"> Google Scholar</a> or take my <a href={CV}>CV</a>.
             </p>
           </div>
-          <div class="tile is-child">
-            <p class="subtitle">
-              
-            </p>
+          <div class="tile is-child is-parent is-vertical">
+            <div class="tile is-child homepage-pic-div">
+              {profile && (
+                <Image
+                  fixed={profile}
+                  alt={"Liam Dugan"}
+                  className="homepage-pic"
+                />
+              )}
+            </div>
+            <div class="tile is-child">
+              <Links />
+            </div>
           </div>
         </div>
-        <div class="tile is-parent is-vertical">
-          <div class="tile is-child homepage-pic-div">
-            {profile && (
-              <Image
-                fixed={profile}
-                alt={"Liam Dugan"}
-                className="homepage-pic"
-              />
-            )}
-          </div>
-          <div class="tile is-child">
-            <Links />
-          </div>
-        </div>
-      </div>
 
-      <div class="tile is-parent">
-        <div class="tile is-child">
-          <p class="title"> News </p>
-        </div>
-        <div class="tile is-child">
-          <p class="title"> Recent Blog Posts </p>
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-            return (
-              <article
-                key={post.fields.slug}
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-              </article>
-            )
-          })}
+        <div class="tile is-parent is-vertical">
+          <div class="tile is-child">
+            <p class="title"> News </p>
+          </div>
+          <div class="tile is-child">
+            <p class="title"> Recent Blog Posts </p>
+            {posts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+              return (
+                <article
+                  key={post.fields.slug}
+                  className="post-list-item"
+                  itemScope
+                  itemType="http://schema.org/Article"
+                >
+                  <header>
+                    <h2>
+                      <Link to={post.fields.slug} itemProp="url">
+                        <span itemProp="headline">{title}</span>
+                      </Link>
+                    </h2>
+                    <small>{post.frontmatter.date}</small>
+                  </header>
+                </article>
+              )
+            })}
+          </div>
         </div>
       </div>
     </Layout>
@@ -99,7 +94,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 400, height: 400, quality: 95) {
+        fixed(width: 300, height: 300, quality: 95) {
           ...GatsbyImageSharpFixed
         }
       }
