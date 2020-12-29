@@ -21,8 +21,8 @@ const HomePage = ({ data, location }) => {
           <div class="tile is-child">
             <p class="title"> About Me </p>
             <p class="subtitle">
-              Hi! My name is Liam Dugan. I'm a 2nd year Master's Student
-              conducting research in Natural Language Processing in the lab of
+              Hi! My name is Liam Dugan. I'm a 2nd year Master's Student at the <a href="https://upenn.edu"> University of Pennsylvania </a>
+              doing NLP research in the lab of
               <a href="https://www.cis.upenn.edu/~ccb/"> Chris Callison-Burch</a>.
             </p>
             <p class="subtitle">
@@ -34,12 +34,14 @@ const HomePage = ({ data, location }) => {
               My long term goal is to use NLP and AI to advance
               the science of language learning!
             </p>
+            <p class="subtitle">
+              Feel free to look me up on
+              <a href="https://scholar.google.com/citations?user=ILGf0IIAAAAJ&hl"> Google Scholar</a> or take my <a href={CV}>CV</a>.
+            </p>
           </div>
           <div class="tile is-child">
             <p class="subtitle">
-              Feel free to look me up on
-              <a href="https://scholar.google.com/citations?user=ILGf0IIAAAAJ&hl"> Google Scholar</a>,
-              Twitter, or take my <a href={CV}>CV</a>.
+              
             </p>
           </div>
         </div>
