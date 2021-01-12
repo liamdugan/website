@@ -46,17 +46,14 @@ const Bio = () => {
           fixed={avatar}
           alt={author?.name || ``}
           className="bio-avatar"
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
         />
       )}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Written by <strong>{author.name}</strong>
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+            Follow me on Twitter
           </a>
         </p>
       )}

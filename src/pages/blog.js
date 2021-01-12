@@ -23,35 +23,33 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blog " />
-      <p class="title">My Blog</p>
-      <p class="subtitle">Research, Hobbies, Language Learning and more!</p>
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
           <div class="box">
-          <article
-            key={post.fields.slug}
-            className="post-list-item"
-            itemScope
-            itemType="http://schema.org/Article"
-          >
-            <header>
-              <h2>
-                <Link to={post.fields.slug} itemProp="url">
-                  <span itemProp="headline">{title}</span>
-                </Link>
-              </h2>
-              <small>{post.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: post.frontmatter.description || post.excerpt,
-                }}
-                itemProp="description"
-              />
-            </section>
-          </article>
+            <article
+              key={post.fields.slug}
+              className="post-list-item"
+              itemScope
+              itemType="http://schema.org/Article"
+            >
+              <header>
+                <small><strong>{post.frontmatter.date}</strong> Tags: NLP, RL, COOL SHIT</small>
+                <p>
+                  <Link to={post.fields.slug} itemProp="url" color="red">
+                    <span itemProp="headline" style={{fontSize: "36px"}}>{title}</span>
+                  </Link>
+                </p>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: post.frontmatter.description || post.excerpt,
+                  }}
+                  itemProp="description"
+                />
+              </section>
+            </article>
           </div>
         )
       })}

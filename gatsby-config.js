@@ -3,7 +3,6 @@ module.exports = {
     title: `The Home of Liam Dugan`,
     author: {
       name: `Liam Dugan`,
-      summary: `who lives and does NLP and AI research at the University of Pennsylvania in Philadelphia.`,
     },
     description: `The Home of Liam Dugan`,
     siteUrl: `http://www.liamdugan.com`,
