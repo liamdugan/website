@@ -5,6 +5,7 @@ import CV from "../../content/assets/cv.pdf"
 
 import Bio from "../components/bio"
 import NewsEntry from "../components/newsentry"
+import Publication from "../components/publication"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Links from "../components/links"
@@ -68,7 +69,17 @@ const HomePage = ({ data, location }) => {
               <NewsEntry date={"May 2020"} text={"I graduated from the University of Pennsylvania with a Bachelor's in Computer Engineering and East Asian Languages and Civilizations (Japanese)!"}/>
             </table>
           </div>
-
+          <div class="tile is-child">
+            <p class="title"> Publications </p>
+            <ul class="publications-list">
+              <Publication 
+                title={"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text"} 
+                authors={"Liam Dugan*, Daphne Ippolito*, Arun Kirubarajan*, Chris Callison-Burch"}
+                venue={"EMNLP 2020 (Demo Track)"}
+                links={<span>Poggers? <a href="https://www.example.com">(pdf)</a></span>}
+              />
+            </ul>
+          </div>
           <div class="tile is-child">
             <p class="title"> Blog </p>
             {posts.map(post => {

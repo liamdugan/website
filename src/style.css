@@ -346,3 +346,8 @@ a:focus {
 article {
   margin-left: 1rem;
 }
+
+.publication {
+  font-size: var(--fontSize-2);
+  margin-left: 1rem;
+}
