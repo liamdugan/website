@@ -65,18 +65,32 @@ const HomePage = ({ data, location }) => {
             <table class="news">
               <NewsEntry date={"December 2020"} text={"I graduated from University of Pennsylvania with a Master's in Robotics!"}/>
               <NewsEntry date={"December 2020"} text={"I published my Master's Thesis \"Learning Formality from Japanese-English Parallel Corpora\""}/>
-              <NewsEntry date={"September 2020"} text={"My Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
-              <NewsEntry date={"May 2020"} text={"I graduated from the University of Pennsylvania with a Bachelor's in Computer Engineering and East Asian Languages and Civilizations (Japanese)!"}/>
+              <NewsEntry date={"September 2020"} text={"Our Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
+              <NewsEntry date={"May 2020"} text={"I graduated from the University of Pennsylvania with a Bachelor's in Computer Engineering and East Asian Studies (Japanese)!"}/>
             </table>
           </div>
           <div class="tile is-child">
             <p class="title"> Publications </p>
             <ul class="publications-list">
-              <Publication 
-                title={"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text"} 
-                authors={"Liam Dugan*, Daphne Ippolito*, Arun Kirubarajan*, Chris Callison-Burch"}
+              <Publication
+                title={"Learning Formality from Japanese-English Parallel Corpora"}
+                authors={<span><b>Liam Dugan</b>, Chris Callison-Burch, C.J. Taylor</span>}
+                venue={"Master's Thesis"}
+                links={""}
+              />
+              <br/>
+              <Publication
+                title={"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text"}
+                authors={<span><b>Liam Dugan*</b>, Daphne Ippolito*, Arun Kirubarajan*, Chris Callison-Burch</span>}
                 venue={"EMNLP 2020 (Demo Track)"}
-                links={<span>Poggers? <a href="https://www.example.com">(pdf)</a></span>}
+                links={<span><a href="https://arxiv.org/pdf/2010.03070">(pdf)</a> <a href="https://github.com/kirubarajan/roft">(code)</a> <a href="http://roft.io/">(demo)</a></span>}
+              />
+              <br/>
+              <Publication
+                title={"Cloud Chaser: Real Time Deep Learning Computer Vision on Low Computing Power Devices"}
+                authors={<span>Zhengyi Luo, Austin Small, <b>Liam Dugan</b>, Stephen Lane</span>}
+                venue={"ICMV 2018"}
+                links={<span><a href="https://arxiv.org/pdf/1810.01069">(pdf)</a> <a href="https://github.com/ZhengyiLuo/Cloud-Chaser">(code)</a> </span>}
               />
             </ul>
           </div>
