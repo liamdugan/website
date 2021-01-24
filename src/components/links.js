@@ -8,8 +8,8 @@ const Links = () => {
         <ul className="links-parent">
             <li className="links"><a href="https://github.com/liamdugan"><FaGithub size={50}/></a></li>
             <li className="links"><a href="https://www.linkedin.com/in/liam-dugan/"><FaLinkedin size={50}/></a></li>
-            <li className="links"><a href=""><FaTwitter size={50}/></a></li>
-            <li className="links"><a href=""><FaYoutube size={50}/></a></li>
+            <li className="links"><a href="https://twitter.com/LiamDugan_"><FaTwitter size={50}/></a></li>
+            <li className="links"><a href="https://www.youtube.com/channel/UCJ0CmYx0Ureqi9iBAf5xIbQ"><FaYoutube size={50}/></a></li>
         </ul>
     </div>
   )
