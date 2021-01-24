@@ -63,9 +63,9 @@ const HomePage = ({ data, location }) => {
           <div class="tile is-child">
             <p class="title"> News </p>
             <table class="news">
-              <NewsEntry date={"December 2020"} text={"I graduated from University of Pennsylvania with a Master's in Robotics!"}/>
-              <NewsEntry date={"December 2020"} text={"I published my Master's Thesis \"Learning Formality from Japanese-English Parallel Corpora\""}/>
-              <NewsEntry date={"September 2020"} text={"Our Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
+              <NewsEntry date={"Dec 2020"} text={"I graduated from University of Pennsylvania with a Master's in Robotics!"}/>
+              <NewsEntry date={"Dec 2020"} text={"I published my Master's Thesis \"Learning Formality from Japanese-English Parallel Corpora\""}/>
+              <NewsEntry date={"Sep 2020"} text={"Our Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
               <NewsEntry date={"May 2020"} text={"I graduated from the University of Pennsylvania with a Bachelor's in Computer Engineering and East Asian Studies (Japanese)!"}/>
             </table>
           </div>
