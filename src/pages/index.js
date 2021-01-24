@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import CV from "../../content/assets/cv.pdf"
+import Thesis from "../../content/assets/thesis.pdf"
 
 import Bio from "../components/bio"
 import NewsEntry from "../components/newsentry"
@@ -76,7 +77,7 @@ const HomePage = ({ data, location }) => {
                 title={"Learning Formality from Japanese-English Parallel Corpora"}
                 authors={<span><b>Liam Dugan</b>, Chris Callison-Burch, C.J. Taylor</span>}
                 venue={"Master's Thesis"}
-                links={""}
+                links={<span><a href={Thesis}>(pdf)</a></span>}
               />
               <br/>
               <Publication
