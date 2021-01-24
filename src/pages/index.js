@@ -75,9 +75,9 @@ const HomePage = ({ data, location }) => {
             <ul class="publications-list">
               <Publication
                 title={"Learning Formality from Japanese-English Parallel Corpora"}
-                authors={<span><b>Liam Dugan</b>, Chris Callison-Burch, C.J. Taylor</span>}
+                authors={<span><b>Liam Dugan</b></span>}
                 venue={"Master's Thesis"}
-                links={<span><a href={Thesis}>(pdf)</a></span>}
+                links={<span><a href={Thesis}>(pdf)</a> <a href="https://youtu.be/KoZvpKZ4k60">(video)</a></span>}
               />
               <br/>
               <Publication
