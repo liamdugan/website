@@ -70,6 +70,20 @@ const HomePage = ({ data, location }) => {
             </table>
           </div>
           <div class="tile is-child">
+            <p class="title"> Recent Work </p>
+            <p align="center">
+            <iframe title="Master's Thesis Presentation"
+                    width="560" height="315" 
+                    src="https://www.youtube.com/embed/KoZvpKZ4k60" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; 
+                           encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+            </p>
+            <p class="highlighted-caption" align="center">Watch my Virtual Master's Thesis Defense and read the full document <a href={Thesis}>here!</a></p>
+          </div>
+          <div class="tile is-child">
             <p class="title"> Publications </p>
             <ul class="publications-list">
               <Publication

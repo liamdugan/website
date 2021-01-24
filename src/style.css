@@ -351,3 +351,7 @@ article {
   font-size: var(--fontSize-2);
   margin-left: 1rem;
 }
+
+.highlighted-caption {
+  font-size: var(--fontSize-2);
+}
