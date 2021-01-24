@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 import CV from "../../content/assets/cv.pdf"
 import Thesis from "../../content/assets/thesis.pdf"
 
-import Bio from "../components/bio"
 import NewsEntry from "../components/newsentry"
 import Publication from "../components/publication"
 import Layout from "../components/layout"
