@@ -197,7 +197,7 @@ a:focus {
 .body-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-2) var(--spacing-0);
+  padding: var(--spacing-10) var(--spacing-2) var(--spacing-2) var(--spacing-2);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -206,7 +206,6 @@ a:focus {
 
 .global-header {
   max-width: var(--maxWidth-full);
-  margin-bottom: var(--spacing-12);
 }
 
 .main-heading {
