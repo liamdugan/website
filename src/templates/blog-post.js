@@ -30,7 +30,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
           }}
         >
           <li>
@@ -49,6 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      <hr />
       <article
         className="blog-post"
         itemScope
@@ -61,10 +61,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         {renderAst(post.htmlAst)}
 
         <hr />
-      </article>
-      <footer>
         <Bio />
-      </footer>
+      </article>
     </Layout>
   )
 }
