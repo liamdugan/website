@@ -22,8 +22,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Blog " />
+      <div class="blog-container">
       <p class="title">My Blog</p>
       <p class="subtitle">Research, Hobbies, Language Learning and more!</p>
+      <div class="blog-post-list-container">
       {posts.map(post => {
         const title = post.frontmatter.title || post.fields.slug
         return (
@@ -54,6 +56,8 @@ const BlogIndex = ({ data, location }) => {
           </div>
         )
       })}
+      </div>
+      </div>
     </Layout>
   )
 }

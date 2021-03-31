@@ -27,9 +27,9 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+  --fontFamily-sans: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
   "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --fontFamily-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", 
+  --fontFamily-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
   "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
@@ -215,8 +215,8 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-bottom: var(--spacing-3);
+  margin-top: var(--spacing-3);
 }
 
 .post-list-item p {
@@ -354,4 +354,20 @@ article {
 
 .highlighted-caption {
   font-size: var(--fontSize-2);
+}
+
+.box {
+  box-padding: 0.25rem;
+  border-style: solid;
+  box-shadow: 10px 10px 8px #888888;;
+}
+
+.blog-post-list-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.blog-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
