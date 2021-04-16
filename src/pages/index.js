@@ -24,7 +24,7 @@ const HomePage = ({ data, location }) => {
             <p class="title"> About Me </p>
             <div class="about-text">
               <p class="subtitle">
-                Hi! My name is Liam Dugan. I'm a 2nd year Master's Student at the <a href="https://upenn.edu"> University of Pennsylvania </a>
+                Hi! My name is Liam Dugan. I'm an incoming Ph.D Student at <a href="https://upenn.edu"> University of Pennsylvania </a>
                 doing NLP research in the lab of
                 <a href="https://www.cis.upenn.edu/~ccb/"> Chris Callison-Burch</a>.
               </p>
@@ -63,6 +63,7 @@ const HomePage = ({ data, location }) => {
           <div class="tile is-child">
             <p class="title"> News </p>
             <table class="news">
+              <NewsEntry date={"Mar 2021"} text={"I enrolled in the Ph.D. program at University of Pennsylvania!"}/>
               <NewsEntry date={"Dec 2020"} text={"I graduated from University of Pennsylvania with a Master's in Robotics!"}/>
               <NewsEntry date={"Dec 2020"} text={"I published my Master's Thesis \"Learning Formality from Japanese-English Parallel Corpora\""}/>
               <NewsEntry date={"Sep 2020"} text={"Our Demo Paper \"RoFT: A Tool for Evaluating Human Detection of Machine Generated Text\" was accepted to EMNLP 2020!"}/>
@@ -73,11 +74,11 @@ const HomePage = ({ data, location }) => {
             <p class="title"> Recent Work </p>
             <p align="center">
             <iframe title="Master's Thesis Presentation"
-                    width="560" height="315" 
-                    src="https://www.youtube.com/embed/KoZvpKZ4k60" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; 
-                           encrypted-media; gyroscope; picture-in-picture" 
+                    width="560" height="315"
+                    src="https://www.youtube.com/embed/KoZvpKZ4k60"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write;
+                           encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
             </iframe>
             </p>
