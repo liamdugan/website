@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaRegNewspaper, FaPenNib, FaCode, FaCoffee, FaHome } from 'react-icons/fa'
+import { FaRegNewspaper, FaPenNib, FaHome } from 'react-icons/fa'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import CV from "../../content/assets/cv.pdf"
 import Thesis from "../../content/assets/thesis.pdf"
@@ -12,7 +12,6 @@ import Links from "../components/links"
 
 const HomePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
   const profile = data?.avatar?.childImageSharp?.fixed
 
   return (
