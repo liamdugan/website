@@ -57,20 +57,6 @@ const Layout = ({ location, title, children }) => {
             </span>
             Blog
           </Link>
-
-          <Link class="navbar-item" to="/projects" activeClassName="navbar-item">
-            <span class="icon is-medium">
-              <FaCode/>
-            </span>
-            Projects
-          </Link>
-
-          <Link class="navbar-item" to="/about" activeClassName="navbar-item">
-            <span class="icon is-medium">
-              <FaCoffee/>
-            </span>
-            Hobbies
-          </Link>
         </div>
       </div>
     </nav>
